@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesouraria SkarbKlubu — Criar Conta</title>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css_pagina.css">
+    <link rel="stylesheet" href="css_cadastro.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <span>Tesouraria SkarbKlubu</span>
+        </div>
+        <ul class="nav">
+            <li><a href="index.html" style="color:inherit;text-decoration:none;">Entrar</a></li>
+            <li>Sobre</li>
+            <li>Suporte</li>
+            <li>Contato</li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="info">
+            <h2>Crie sua conta gratuitamente</h2>
+            <p>Após o cadastro, um administrador do seu clube irá aprovar seu acesso e definir seu cargo no painel.</p>
+            <ul>
+                <li>Cadastro simples e rápido</li>
+                <li>Aprovação feita pelo seu clube</li>
+                <li>Ou crie um novo clube agora</li>
+                <li>Acesso liberado após aprovação</li>
+            </ul>
+        </div>
+
+        <div class="divisor-vertical">
+            <div class="div-linha"></div>
+            <div class="div-ornamento">
+                <div class="div-losango pequeno"></div>
+                <div class="div-losango"></div>
+                <span class="div-icone">❧</span>
+                <div class="div-losango"></div>
+                <div class="div-losango pequeno"></div>
+            </div>
+            <div class="div-linha"></div>
+        </div>
+
+        <div class="card card-largo">
+            <h2>Criar conta</h2>
+            <p>Preencha seus dados pessoais para se registrar</p>
+
+            <div id="mensagem" class="mensagem oculto"></div>
+
+            <div class="linha-dupla">
+                <div class="campo">
+                    <label>Nome</label>
+                    <input type="text" id="input-nome" placeholder="Seu nome">
+                </div>
+                <div class="campo">
+                    <label>Sobrenome</label>
+                    <input type="text" id="input-sobrenome" placeholder="Sobrenome">
+                </div>
+            </div>
+
+            <div class="campo">
+                <label>E-mail</label>
+                <input type="email" id="input-email" placeholder="seu@email.com">
+            </div>
+
+            <div class="linha-dupla">
+                <div class="campo">
+                    <label>Senha</label>
+                    <input type="password" id="input-senha" placeholder="*******">
+                </div>
+                <div class="campo">
+                    <label>Confirmar Senha</label>
+                    <input type="password" id="input-senha2" placeholder="*******">
+                </div>
+            </div>
+
+            <div class="secao-clube">
+                <div class="secao-clube-header" onclick="toggleCriarClube()">
+                    <div class="secao-clube-titulo">
+                        <span>Criar um novo clube</span>
+                        <span class="badge-opcional">Opcional</span>
+                    </div>
+                    <span class="secao-clube-seta" id="seta-clube">▾</span>
+                </div>
+
+                <div class="secao-clube-corpo" id="corpo-clube">
+                    <div class="campo">
+                        <label>Nome oficial do clube</label>
+                        <input type="text" id="clube-nome-oficial" placeholder="Ex: Associação Atlética Central">
+                    </div>
+
+                    <div class="campo">
+                        <label>Cidade / Estado</label>
+                        <input type="text" id="clube-cidade" placeholder="Ex: São Paulo, SP">
+                    </div>
+
+                    <div class="campo">
+                        <label>Código do clube</label>
+                        <input type="text" id="clube-codigo" placeholder="Ex: SKBKL" maxlength="20" style="text-transform:uppercase;">
+                        <span class="campo-hint">Código curto e único usado pelos membros para localizar o clube.</span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="termos">Ao criar sua conta, você concorda com os <a href="#">Termos de Uso</a> e a <a href="#">Política de Privacidade</a>.</p>
+
+            <button class="btn-entrar" onclick="fazerCadastro()">Criar conta →</button>
+
+            <div class="separador">
+                <hr><span>ou cadastre-se com</span><hr>
+            </div>
+
+            <button class="btn-google">Cadastrar com Google</button>
+
+            <p class="registro">Já tem uma conta? <a href="index.html">Entrar no painel</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Tesouraria SkarbKlubu</p>
+        <ul class="footer-links">
+            <li>Privacidade</li>
+            <li>Termos</li>
+            <li>Ajuda</li>
+        </ul>
+        <p class="footer-fundacao">Fundado em 1998</p>
+    </footer>
+
+    <script src="cadastro.js"></script>
+</body>
+</html>

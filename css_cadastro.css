@@ -1,0 +1,152 @@
+
+
+.linha-dupla {
+    display: flex;
+    gap: 12px;
+}
+
+.linha-dupla .campo {
+    flex: 1;
+}
+
+.campo select {
+    padding: 12px 14px;
+    border: 1px solid #d4c9b0;
+    border-radius: 4px;
+    background: #f2ede4;
+    font-size: 14px;
+    color: #2b1e0f;
+    outline: none;
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    appearance: none;
+    cursor: pointer;
+}
+
+.campo select:focus {
+    border-color: #7a5c2e;
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper::after {
+    content: '▾';
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9a8470;
+    pointer-events: none;
+    font-size: 12px;
+}
+
+.divisor-secao {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 6px 0 18px;
+}
+
+.divisor-secao hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #d4c9b0;
+}
+
+.divisor-secao span {
+    font-family: 'EB Garamond', serif;
+    font-size: 13px;
+    color: #9a8470;
+    white-space: nowrap;
+}
+
+.secao-clube {
+    margin-top: 8px;
+    margin-bottom: 14px;
+    border: 1px solid #d4c9b0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.secao-clube-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px;
+    background: #f2ede4;
+    cursor: pointer;
+    user-select: none;
+}
+
+.secao-clube-header:hover {
+    background: #ece5d8;
+}
+
+.secao-clube-titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.secao-clube-titulo span {
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+    color: #2b1e0f;
+}
+
+.badge-opcional {
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    color: #9a8470;
+    background: #e8e0d4;
+    border: 1px solid #d4c9b0;
+    padding: 2px 8px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.secao-clube-seta {
+    font-size: 14px;
+    color: #9a8470;
+    transition: transform 0.25s ease;
+}
+
+.secao-clube-seta.aberta {
+    transform: rotate(180deg);
+}
+
+.secao-clube-corpo {
+    display: none;
+    padding: 16px;
+    border-top: 1px solid #d4c9b0;
+    background: #faf6ef;
+    flex-direction: column;
+}
+
+.secao-clube-corpo.visivel {
+    display: flex;
+}
+
+.secao-clube-corpo .campo:last-child {
+    margin-bottom: 0;
+}
+
+.termos {
+    font-size: 12px;
+    color: #9a8470;
+    text-align: center;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.termos a {
+    color: #7a5c2e;
+    text-decoration: underline;
+}
+
+.card-largo {
+    width: 480px;
+}
